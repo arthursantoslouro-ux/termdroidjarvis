@@ -123,7 +123,9 @@ int main() {
 
 
 
-        else if (comando == "")
+        else if (comando == "melhor ia") {
+            falar("obrigado");
+        }
 
 
 
@@ -131,8 +133,6 @@ int main() {
         else {
             falar("comando invalido");
         }
-
-
 
 
 
