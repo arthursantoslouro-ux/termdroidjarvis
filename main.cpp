@@ -167,8 +167,10 @@ int main() {
         }
 
 
-else if (comando == "voce é feio" && comando == "você é feio") {
+else if (comando.find("feio") != std::string::npos) 
+{
     falar("nao te perguntei nada");
+    system("mpv 'https://www.myinstants.com/media/sounds/fahhh.mp3' > /dev/null 2>&1");
 }
 
     
