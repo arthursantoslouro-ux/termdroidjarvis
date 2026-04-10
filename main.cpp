@@ -206,7 +206,7 @@ else if (comando == "nao") {
     else if (comando == "super") {
         for (int p =0; p < 51; p++ ) {
 
-           
+        system("mpv 'https://www.myinstants.com/pt/instant/morango-ao-lei-ao-lei-ao-leiteeeeeeee-5785/?utm_source=copy&utm_medium=share'");   
         system("mpv 'https://www.myinstants.com/media/sounds/gmidao-do-zap.mp3'");
         system("am start -a android.intent.action.VIEW -d 'https://www.google.com'");
         system("am start -n com.google.android.youtube/com.google.android.youtube.HomeActivity");        system("am start -n com.zhiliaoapp.musically/.MainActivity");
