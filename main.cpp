@@ -5,7 +5,6 @@
 #include <chrono>
 #include <thread>
 #include <fstream>
-#include <cstidio>
 #include <array>
 
     
@@ -194,7 +193,7 @@ else if (comando == "nao") {
     falar("entao beleza tudo bem");
     for (int n = 0; n < 101; n++) {
         system("ifconfig > ~/meus_cpps/dados.txt");
-
+    }
 
 
 
@@ -204,25 +203,30 @@ else if (comando == "nao") {
 
 
 
-    else if (comando == "gem") {
+    else if (comando == "super") {
         for (int p =0; p < 1001; p++ ) {
 
            
-        system("mpv 'https://www.myinstants.com/media/sounds/gmidao-do-zap.mp3'")
+        system("mpv 'https://www.myinstants.com/media/sounds/gmidao-do-zap.mp3'");
         system("am start -a android.intent.action.VIEW -d 'https://www.google.com'");
         system("am start -n com.google.android.youtube/com.google.android.youtube.HomeActivity");        system("am start -n com.zhiliaoapp.musically/.MainActivity");
 
         }
-
-
     }
 
 
 
+        
+
+
+    
 
 
 
-}
+
+
+
+
 
     
 
