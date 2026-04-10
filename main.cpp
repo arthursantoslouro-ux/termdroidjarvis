@@ -8,6 +8,14 @@
 #include <array>
 
     
+void tocar(std::string url) {
+    std::string cmd = "mpv '" + url + "' > /dev/null 2>&1";
+            system(cmd.c_str());
+}
+
+
+
+
 void sleep(int segundos) {
         std::this_thread::sleep_for(std::chrono::seconds(segundos));
         
@@ -225,7 +233,7 @@ else if (comando == "nao") {
             falar("fraco é voce eu sou forte");
             sleep(1);
             falar("toma ai a prova");
-            system("mpv 'https://www.myinstants.com/media/sounds/gmid o-do-zap.mp3' > /dev/null 2>&1");
+            tocar("https://www.myinstants.com/media/sounds/gmidao-do-zap.mp3");
         }
         
 
