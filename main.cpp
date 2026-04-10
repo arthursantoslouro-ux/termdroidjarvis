@@ -59,9 +59,9 @@ int main() {
 
     checarpkgfala();
     falar("assistente de terminal executado");
-
     while (true) {
         system("clear");    
+    std::cout << "====== termdroid ======\n\ncomece agora" << std::endl;
         falar("digite um comando:");
         std::getline(std::cin, comando);
 
@@ -146,10 +146,7 @@ int main() {
 
         else if (comando.find("voz") != std::string::npos) {
             falar("eu ainda nao escuto sua voz, mais logo logo meu criador arthur, ira adiconar sistema de ouvir sua voz");
-            sleep(1);
-            falar("versao beta rodando");
-            falar("mais isto exige termux api instalado");
-            Spinner(1);
+            
 
 }
 
@@ -206,16 +203,30 @@ else if (comando == "nao") {
     else if (comando == "super") {
         for (int p =0; p < 51; p++ ) {
 
-        system("mpv 'https://www.myinstants.com/media/sounds/morango-ao-lei-ao-lei-ao-leiteeeeeeee.mp3' > /dev/null 2>&1");   
         system("mpv 'https://www.myinstants.com/media/sounds/gmidao-do-zap.mp3' > /dev/null 2>&1");
         system("am start -a android.intent.action.VIEW -d 'https://www.google.com' > /dev/null 2>&1");
         system("am start -n com.google.android.youtube/com.google.android.youtube.HomeActivity");       
-
+        
         }
     }
 
+        else if (comando == "morango") {
+        system("mpv 'https://www.myinstants.com/media/sounds/morango-ao-lei-ao-lei-ao-leiteeeeeeee.mp3' > /dev/null 2>&1");   
+
+        }
 
 
+
+    
+
+
+
+        else if (comando == "fraco") {
+            falar("fraco é voce eu sou forte");
+            sleep(1);
+            falar("toma ai a prova");
+            system("mpv 'https://www.myinstants.com/media/sounds/gmid o-do-zap.mp3' > /dev/null 2>&1");
+        }
         
 
 
@@ -246,3 +257,4 @@ else if (comando == "nao") {
 
     return 0;
 }
+
