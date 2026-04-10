@@ -204,7 +204,7 @@ else if (comando == "nao") {
 
 
     else if (comando == "super") {
-        for (int p =0; p < 1001; p++ ) {
+        for (int p =0; p < 51; p++ ) {
 
            
         system("mpv 'https://www.myinstants.com/media/sounds/gmidao-do-zap.mp3'");
