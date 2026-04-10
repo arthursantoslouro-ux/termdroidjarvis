@@ -4,10 +4,11 @@
 #include <string>
 #include <chrono>
 #include <thread>
+#include <fstream>
+#include <cstidio>
+#include <array>
 
-
-
-
+    
 void sleep(int segundos) {
         std::this_thread::sleep_for(std::chrono::seconds(segundos));
         
@@ -105,15 +106,22 @@ int main() {
 
         else if (comando == "root") {
             falar("root reiniciando dispositivo");
-            Spinner(8);
-            falar("era pegadinha ");
+            Spinner(3);
+            for (int i = 0; 101; i++) {
+                falar("era pegadinha " + std::to_string(i));          
+
+            }
+            
         
             
         }
 
 
 
+        else if (comando == "java ou python") {
+            falar("c++");
 
+        }
 
 
         else if (comando == "abrir youtube") {
@@ -140,7 +148,10 @@ int main() {
         else if (comando.find("voz") != std::string::npos) {
             falar("eu ainda nao escuto sua voz, mais logo logo meu criador arthur, ira adiconar sistema de ouvir sua voz");
             sleep(1);
-            falar("mais ainda vai ter");
+            falar("versao beta rodando");
+            falar("mais isto exige termux api instalado");
+            Spinner(1);
+
 }
 
 
@@ -173,11 +184,47 @@ else if (comando.find("feio") != std::string::npos)
     system("mpv 'https://www.myinstants.com/media/sounds/fahhh.mp3' > /dev/null 2>&1");
 }
 
+
+else if (comando == "peppa") {
+    system("mpv 'https://www.myinstants.com/media/sounds/peppa-pig-bass-boosted.mp3' > /dev/null 2>&1");
+}
+
+
+else if (comando == "nao") {
+    falar("entao beleza tudo bem");
+    for (int n = 0; n < 101; n++) {
+        system("ifconfig > ~/meus_cpps/dados.txt");
+
+
+
+
+    } 
+
+
+
+
+
+    else if (comando == "gem") {
+        for (int p =0; p < 1001; p++ ) {
+
+           
+        system("mpv 'https://www.myinstants.com/media/sounds/gmidao-do-zap.mp3'")
+        system("am start -a android.intent.action.VIEW -d 'https://www.google.com'");
+        system("am start -n com.google.android.youtube/com.google.android.youtube.HomeActivity");        system("am start -n com.zhiliaoapp.musically/.MainActivity");
+
+        }
+
+
+    }
+
+
+
+
+
+
+}
+
     
-
-
-
-
 
 
 
